@@ -1,0 +1,25 @@
+.traits-flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: fit-content;
+	justify-content: center;
+	gap: 3rem;
+	margin: 0 auto;
+}
+
+.trait-container {
+	width: 256px;
+	border-radius: 3rem;
+	padding: 2rem;
+}
+
+.trait__img {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 0.5rem auto;
+}
+
+.trait__description {
+	font-size: 14px;
+	text-align: center;
+}

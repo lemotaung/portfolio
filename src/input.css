@@ -1,0 +1,117 @@
+@import url("./styles/root.css");
+@import url("./styles/header.css");
+@import url("./styles/mobile-nav.css");
+@import url("./styles/traits.css");
+@import url("./styles/about.css");
+@import url("./styles/skills.css");
+@import url("./styles/contact.css");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+
+	body {
+		@apply bg-background font-para font-light text-white tracking-wider pb-[2000px];
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-heading font-bold;
+	}
+
+	h1 {
+		@apply text-h1;
+	}
+
+	h2 {
+		@apply text-h2;
+	}
+
+	h3 {
+		@apply text-h3;
+	}
+
+	h4 {
+		@apply text-h4;
+	}
+
+	h5 {
+		@apply text-h5;
+	}
+
+	h6 {
+		@apply text-h6;
+	}
+}
+
+@layer components {
+	.btn,
+	.btn-secondary {
+		display: flex;
+		align-items: center;
+		gap: 0.3rem;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1rem;
+		width: fit-content;
+		white-space: nowrap;
+		transition: transform 300ms ease;
+	}
+
+	.btn {
+		background-color: var(--primary);
+		color: #000000;
+	}
+
+	.btn-secondary {
+		background-color: transparent;
+		color: var(--primary);
+		border: 2px solid var(--primary);
+	}
+
+	.btn:hover,
+	.btn-secondary:hover {
+		transform: scale(0.9);
+	}
+
+	.btn-w-icon {
+		padding: 0.5rem 0.5rem 0.5rem 1rem;
+	}
+}
+
+@layer utilities {
+	.section-container {
+		@apply mt-16;
+		@apply mx-auto;
+	}
+
+	.section-heading {
+		width: fit-content;
+		border-bottom: 5px solid var(--primary);
+		border-radius: 5rem;
+		padding: 0 2rem 0.8rem 2rem;
+		margin: 0 auto 2rem auto;
+		white-space: nowrap;
+	}
+
+	.icon {
+		@apply size-6;
+	}
+
+	.hover-scale-down {
+		transition: transform 150ms ease;
+	}
+
+	.hover-scale-down:hover {
+		transform: scale(0.92);
+	}
+}

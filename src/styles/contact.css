@@ -1,0 +1,54 @@
+.icon-container {
+	color: var(--primary);
+	border: 2px solid var(--tertiary);
+	border-radius: 50%;
+	padding: 0.8rem;
+	box-shadow: 0 0px 8px 2px var(--tertiary);
+	cursor: pointer;
+	transition: transform 150ms ease, background-color 150ms ease;
+
+	&:hover {
+		transform: scale(0.9);
+		background-color: var(--clr-gray);
+	}
+}
+
+form {
+	border: 2px solid var(--tertiary);
+	border-radius: 1rem;
+	padding: 2rem;
+	width: fit-content;
+	background-color: var(--bg-background);
+
+	position: absolute;
+	top: 4rem;
+	left: 50%;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.input-box {
+	width: 256px;
+	border: 2px solid var(--tertiary);
+	border-radius: 0.8rem;
+	background-color: transparent;
+	padding: 0.7rem 1rem;
+	font-size: 14px;
+	color: var(--clr-gray);
+	letter-spacing: 0.3rem;
+
+	transition: letter-spacing 150ms ease;
+
+	&:focus {
+		outline: none;
+		letter-spacing: 0.1rem;
+	}
+}
+
+.input-box.spaced {
+	letter-spacing: 0.1rem;
+}
