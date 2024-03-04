@@ -25,6 +25,7 @@ header {
 
 .header__nav {
 	display: flex;
+	justify-content: space-between;
 	width: 90%;
 	height: 4rem;
 	border-radius: 1rem;
@@ -42,11 +43,7 @@ header {
 .right-side {
 	display: flex;
 	align-items: center;
-	gap: 3rem;
-}
-
-.right-side {
-	margin-left: auto;
+	gap: 2rem;
 }
 
 .header__nav-links {
@@ -68,6 +65,11 @@ header {
 		transform: translateX(0);
 		opacity: 1;
 	}
+}
+
+.mobile-cv-btn {
+	color: #000000;
+	background-color: var(--primary);
 }
 
 /* hamburger animation */
