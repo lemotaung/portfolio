@@ -36,7 +36,7 @@ export default {
       },
       colors: {
         'background': '#1d1e2c',
-        'black': '#000000',
+        'black': '#262424',
         'white': '#ffffff',
         'primary': '#2ec4b6',
         'secondary': '',
