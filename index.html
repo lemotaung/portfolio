@@ -142,7 +142,7 @@
 						target="_blank"
 						class="btn max-sm:hidden"
 					>
-						Scout CV
+						Resume
 					</a>
 				</div>
 			</div>
@@ -257,12 +257,10 @@
 		</header>
 
 		<!-- Mobile Nav -->
-		<setion
-			class="mobile-nav bg-glass border-r-[3px] max-xs:w-full lg:hidden"
-		>
-			<nav class="w-full">
+		<setion class="mobile-nav bg-glass border-r-[3px] lg:hidden">
+			<nav class="w-full mt-2">
 				<a
-					href="#"
+					href="#introduction"
 					class="mobile-nav__link flex items-center link--hover"
 				>
 					<span>Introduction</span>
@@ -281,7 +279,27 @@
 					</svg>
 				</a>
 				<a
-					href="#"
+					href="./public/docs/LEHLOHONOLO MOTAUNG CV.pdf"
+					target="_blank"
+					class="mobile-nav__link flex items-center link--hover"
+				>
+					<span>Resume</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						viewBox="0 0 16 16"
+						class="icon header-link__icon"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+						/>
+					</svg>
+				</a>
+				<a
+					href="#skills"
 					class="mobile-nav__link flex items-center link--hover"
 				>
 					<span>Skills</span>
@@ -300,7 +318,7 @@
 					</svg>
 				</a>
 				<a
-					href="#"
+					href="#portfolio"
 					class="mobile-nav__link flex items-center link--hover"
 				>
 					<span>Portfolio</span>
@@ -319,7 +337,7 @@
 					</svg>
 				</a>
 				<a
-					href="#"
+					href="#contact"
 					class="mobile-nav__link flex items-center link--hover"
 				>
 					<span>Contact</span>
@@ -384,7 +402,7 @@
 		<!-- About Section -->
 		<section class="container section-container" id="introduction">
 			<div
-				class="about__grid max-lg:grid-cols-none max-lg:grid-rows-[repeat(auto)]"
+				class="about__grid px-6 max-lg:grid-cols-none max-lg:grid-rows-[repeat(auto)]"
 			>
 				<div class="about__img max-xs:w-[320px]">
 					<img
@@ -409,7 +427,11 @@
 						My hope is to be part of a development team that is fond
 						of this craft as much as I am.
 					</p>
-					<a href="#" class="btn space-x-2 place-self-center">
+					<a
+						href="mailto:hloni.motaung095@gmail.com"
+						target="_blank"
+						class="btn space-x-2 place-self-center"
+					>
 						<span>Say Hello</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -514,7 +536,7 @@
 		</section>
 
 		<!-- Contact Section -->
-		<section class="mt-32 bg-black">
+		<section class="mt-32 bg-black" id="contact">
 			<div
 				class="flex items-center gap-12 py-16 w-fit mx-auto max-lg:flex-col"
 			>
@@ -528,7 +550,7 @@
 					</p>
 					<div class="flex gap-6 mt-4 max-lg:justify-center">
 						<a
-							href="#mailto:hloni.motaung095@gmail.com"
+							href="mailto:hloni.motaung095@gmail.com"
 							class="icon-container bg-glass"
 						>
 							<svg
@@ -565,7 +587,7 @@
 						</a>
 
 						<a
-							href="https://github.com/lemo"
+							href="https://github.com/lemotaung"
 							target="_blank"
 							class="icon-container bg-glass"
 						>
@@ -591,12 +613,12 @@
 							<input
 								type="text"
 								placeholder="Full name*"
-								class="input-box"
+								class="input-box max-xs:w-[288px] max-md:w-[320px]"
 							/>
 							<input
 								type="text"
 								placeholder="Email address*"
-								class="input-box"
+								class="input-box max-xs:w-[288px] max-md:w-[320px]"
 							/>
 						</div>
 						<textarea
@@ -604,7 +626,7 @@
 							id=""
 							rows="5"
 							placeholder="Your message*"
-							class="input-box resize-none w-[calc((288px*2)+1.5rem)] max-md:w-[288px]"
+							class="input-box resize-none w-[calc((288px*2)+1.5rem)] max-xs:w-[288px] max-md:w-[320px]"
 						></textarea>
 					</fieldset>
 					<a href="" class="btn-secondary gap-2 max-md:mx-auto">
