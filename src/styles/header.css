@@ -25,7 +25,6 @@ header {
 
 .header__nav {
 	display: flex;
-	justify-content: space-between;
 	width: 90%;
 	height: 4rem;
 	border-radius: 1rem;
@@ -36,21 +35,24 @@ header {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 999;
-}
 
-.bg-glass {
-	background: var(--tertiary);
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
-	border: 1px solid var(--tertiary);
-	box-shadow: 0 2px 16px var(--tertiary);
 }
 
 .left-side,
 .right-side {
 	display: flex;
 	align-items: center;
-	gap: 2rem;
+	gap: 3rem;
+}
+
+.right-side {
+	margin-left: auto;
+}
+
+.header__nav-links {
+	display: none;
+	align-items: center;
+	gap: 1.5rem;
 }
 
 .header-link__icon {
