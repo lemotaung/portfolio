@@ -607,29 +607,36 @@
 					</div>
 				</div>
 
-				<form action="message">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input
+						type="hidden"
+						name="access_key"
+						value="648a21ac-f0aa-4c59-a178-e4025bb550cd"
+					/>
+
 					<fieldset>
 						<div class="flex items-center gap-6 max-md:flex-col">
 							<input
 								type="text"
+								name="name"
 								placeholder="Full name*"
 								class="input-box max-xs:w-[288px] max-md:w-[320px]"
 							/>
 							<input
-								type="text"
+								type="email"
+								name="email"
 								placeholder="Email address*"
 								class="input-box max-xs:w-[288px] max-md:w-[320px]"
 							/>
 						</div>
 						<textarea
-							name=""
-							id=""
+							name="message"
 							rows="5"
 							placeholder="Your message*"
 							class="input-box resize-none w-[calc((288px*2)+1.5rem)] max-xs:w-[288px] max-md:w-[320px]"
 						></textarea>
 					</fieldset>
-					<a href="" class="btn-secondary gap-2 max-md:mx-auto">
+					<button type="submit" class="btn-secondary">
 						<span>Send Message</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -643,7 +650,7 @@
 								d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"
 							/>
 						</svg>
-					</a>
+					</button>
 				</form>
 			</div>
 		</section>

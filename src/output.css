@@ -1368,6 +1368,11 @@ h6 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1381,11 +1386,6 @@ h6 {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .text-black {
@@ -1498,10 +1498,6 @@ h6 {
     margin-right: auto;
   }
 
-  .max-md\:w-\[288px\] {
-    width: 288px;
-  }
-
   .max-md\:w-\[320px\] {
     width: 320px;
   }
@@ -1531,16 +1527,16 @@ h6 {
     display: none;
   }
 
+  .max-xs\:w-\[288px\] {
+    width: 288px;
+  }
+
   .max-xs\:w-\[300px\] {
     width: 300px;
   }
 
   .max-xs\:w-\[320px\] {
     width: 320px;
-  }
-
-  .max-xs\:w-\[288px\] {
-    width: 288px;
   }
 
   .max-xs\:justify-center {
